@@ -1,0 +1,185 @@
+
+:root {
+    --ssvo-purple: #8c40ff;
+    --navbar-height: 80px;
+    --navbar-gradient-height: 10px;
+    --navbar-padding: 8px;
+    --page-background: #dddddd;
+    --light-text-color: #ffffff;
+    --medium-text-color: #aaaaaa;
+    --medark-text-color: #555555;
+    --dark-text-color: #000000;
+    --whitespace-amt: 70px;
+}
+
+body {
+    background-color: var(--page-background);
+    color: var(--dark-text-color);
+    font-family: "Roboto", sans-serif;
+}
+
+/* about page images */
+.about-img {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-height: 400px;
+    max-width: 100%;
+}
+
+/* faq */
+.faq-header {
+    font-style: italic;
+    font-size: 2em;
+    color: var(--medark-text-color);
+}
+
+.faq-answer {
+    font-size: 1.2em;
+}
+
+/* Footer */
+a.footer-link {
+    text-decoration: underline;
+    color: var(--medium-text-color);
+}
+
+footer {
+    background-color: var(--ssvo-purple);
+    margin-top: var(--whitespace-amt);
+    padding-top: 16px;
+    padding-bottom: 2px;
+    color: var(--medium-text-color);
+}
+
+/* NAVBAR */
+.navbar-ssvo {
+    background-image: linear-gradient(to top, var(--page-background), var(--ssvo-purple) var(--navbar-gradient-height));
+    min-height: calc(var(--navbar-height) + var(--navbar-gradient-height));
+    width: 100%;
+    padding-top: var(--navbar-padding);
+    padding-bottom: calc(var(--navbar-gradient-height));
+    margin-bottom: var(--whitespace-amt);
+    /* ) + var(--navbar-padding)); */
+}
+
+.navbar-ssvo-logo {
+    height: calc(var(--navbar-height) - (0 * var(--navbar-padding))) !important;
+}
+
+.navbar-ssvo .navbar-toggler-ssvo {
+    border-color: var(--light-text-color);
+}
+
+.navbar-ssvo .navbar-toggler-icon-ssvo {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.nav-link-ssvo:hover {
+    color: var(--medium-text-color) !important;
+}
+
+/* Jumbo */
+
+.jumbotron-ssvo {
+    background-color: var(--page-background);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 5px;
+}
+
+.text-ssvo-purple {
+    color: var(--ssvo-purple);
+}
+
+.tagline {
+    color: var(--medark-text-color);
+    font-style: italic;
+    font-size: 2em;
+    margin-bottom: var(--whitespace-amt);
+}
+
+/* SERVICE CARDS */
+
+
+.service-image-ssvo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.card-ssvo {
+    display: block;
+    background-color: var(--page-background);
+    border: none;
+}
+ 
+ .card-img-overlay-ssvo {
+    opacity: 0;
+    text-decoration: none;
+    color: var(--dark-text-color);
+    transition: 0.5s;
+}
+
+.card-ssvo:hover .card-img-overlay {
+    opacity: 1
+}
+
+.card-ssvo:hover .service-image-ssvo {
+    background-color: rgba(0, 0, 0, 0.3);
+    filter: blur(4px);
+    transform: scale(1.1);
+}
+
+.card-title-ssvo {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: var(--light-text-color);
+    font-family: 'Russo One', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Accordion */
+
+.card-accordion, accordion {
+    background-color: var(--page-background);
+}
+
+.card-accordion {
+    padding: 0px;
+    border: 0px;
+}
+
+/* random bits */
+.text-medium-ssvo {
+    color: var(--medium-text-color);
+}
+
+.audio-sample-ssvo:hover {
+    color: var(--dark-text-color);
+}
+
+.audio-sample-ssvo {
+    color: var(--medark-text-color);
+    background-color: var(--page-background);
+    text-decoration: underline;
+}
+
+.title-font {
+    font-family: "Russo One", sans-serif;
+}
+
+.display-5 {
+    font-size: 3rem;
+    font-weight: 250;
+    line-height: 1.2;
+}
